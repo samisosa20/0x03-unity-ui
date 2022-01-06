@@ -14,6 +14,13 @@ public class PlayerController : MonoBehaviour
     public Text winLoseText;
     public Image winLoseBG;
 
+    private Rigidbody rb_player;
+
+    void Start()
+    {
+            rb_player = GetComponent<Rigidbody>();
+    }
+
     // Update is called once per frame
     void FixedUpdate()
     {
